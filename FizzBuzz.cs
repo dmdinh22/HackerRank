@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-class Solution {
-    static void Main(String[] args) {
+class FizzSolution {
+    public static void FizzBuzz(string input) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
         var line1 = System.Console.ReadLine().Trim();
         var N = Int32.Parse(line1);
