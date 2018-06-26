@@ -5,14 +5,14 @@ using System.Numerics;
 
 class FactorialSolution
 {
-  static void Main(String[] args)
-  {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
-    int n = Convert.ToInt32(Console.ReadLine());
-    BigInteger result = Factorial(n);
+  // static void Main(String[] args)
+  // {
+  //   /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+  //   int n = Convert.ToInt32(Console.ReadLine());
+  //   BigInteger result = Factorial(n);
 
-    Console.WriteLine(result);
-  }
+  //   Console.WriteLine(result);
+  // }
 
   public static BigInteger Factorial(int n)
   {

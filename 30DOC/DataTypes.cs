@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace HackerRank .30 DOC
+namespace HackerRank.ThirtyDOC
 {
     public class DataTypes
     {
-        static void Main(String[] args)
+        static void Program(String[] args)
         {
             int i = 4;
             double d = 4.0;
@@ -29,3 +29,4 @@ namespace HackerRank .30 DOC
             Console.WriteLine(s + inputString);
         }
     }
+}
