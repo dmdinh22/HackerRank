@@ -14,7 +14,6 @@ using System.Text.RegularExpressions;
 
 class Recursion
 {
-
     // Complete the factorial function below.
     public static int factorial(int n)
     {
