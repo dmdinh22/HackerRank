@@ -38,3 +38,12 @@ namespace HackerRank.ThirtyDOC
         }
     }
 }
+
+// shorter
+/*
+    int n = Convert.ToInt32(Console.ReadLine());
+    var b = Convert.ToString(n,2);
+    string[] arr = b.Split('0').ToArray();
+    int c = arr.Select(x => x.Length).Max();
+    Console.WriteLine(c);
+ */
