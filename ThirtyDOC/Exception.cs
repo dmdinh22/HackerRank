@@ -15,7 +15,7 @@ namespace HackerRank.ThirtyDOC
             {
                 Console.WriteLine(int.Parse(S));
             }
-            catch (Exception e)
+            catch (FormatException)
             {
                 Console.WriteLine("Bad String");
             }
