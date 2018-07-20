@@ -27,7 +27,7 @@ public class FibSolution
 
     private Dictionary<int, int> _memo - new Dictionary<int, int>();
 
-    public int Fib(int n)
+    public int FibMemo(int n)
     {
         // edge case - NEGATIVE index
         if (n < 0)
@@ -47,7 +47,7 @@ public class FibSolution
         if (!_memo.TryGetValue(n, out result))
         {
             // not yet, so comput it
-            result = Fib(n - 1) + Fib(n - 2);
+            result = FibMemo(n - 1) + FibMemo(n - 2);
 
             //Memoize this result by adding it to the dict
             _memo.Add(n, result);
@@ -56,18 +56,12 @@ public class FibSolution
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    // -with memoization, the call stack for Fib(5) is 
+    // Fib(5), Fib(4), Fib(3), Fib(2), Fib(1)
+    // which would e n time in total
+    // -memo takes up n space, and building up a call stack that takes 
+    // n space also.
+    // to avoid the buildup of call stack, use BOTTOM UP
 
 
 
