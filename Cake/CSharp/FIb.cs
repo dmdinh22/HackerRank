@@ -63,11 +63,48 @@ public class FibSolution
     // n space also.
     // to avoid the buildup of call stack, use BOTTOM UP
 
+    // Bottom Up Approach
+    public static int Fib(int n)
+    {
+            // Edge cases:
+        if (n < 0)
+        {
+            throw new ArgumentException("Index was negative. No such thing as a negative index in a series.");
+        }
 
+        if (n < 2)
+        {
+            return n;
+        }
 
+        // we'll be buliding the fib series from the bottom up.
+        // so we'll need to track the prev 2 numbers at each step.
+        int prevPrev = 0;   // 0th fib
+        int prev = 1;       // 1st fib
+        int current = 0;    // declare and initialize current fib
+
+        for (var i = 0; i < n; i ++)
+        {
+            // iteration 1: current = 2nd fib
+            // iteration 2: current = 3rd fib
+            // iteration 3: current = 4th fib
+            // to get nth fib... do n - 1 iterations
+            current = prev + prevPrev;
+            prevPrev = prev;
+            prev = current;
+        }
+
+        return current;
+    }
+
+    // BOTTOM UP has O(n) time and O(1) space
+    // Fibonnaci series is a good illustration of tradeoff we have
+    // bt clean code and efficiency
+
+    // Recursive solution might build up a call stack, 
+    //so iterative might be more efficient
 
     // Tests
-
     [Fact]
     public void ZerothFibonacciTest()
     {
