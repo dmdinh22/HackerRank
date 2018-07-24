@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class Solution {
-
     public static int minimum_index(int[] seq) {
         if (seq.length == 0) {
             throw new IllegalArgumentException("Cannot get the minimum value index from an empty sequence");
@@ -15,7 +14,7 @@ public class Solution {
         return min_idx;
     }
 
-        static class TestDataEmptyArray {
+    static class TestDataEmptyArray {
         public static int[] get_array() {
             // complete this function
             return new int[0];
