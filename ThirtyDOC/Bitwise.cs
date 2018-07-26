@@ -24,6 +24,7 @@ class Bitwise {
 
             int k = Convert.ToInt32(nk[1]);
 
+            // ((k-1) | k) is always k
             if ((k-1 | k) > n && k % 2 == 0)
             {
                 Console.WriteLine(k-2);
