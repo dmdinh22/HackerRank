@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "dev",
   "version": "1.0.0",
@@ -15,3 +16,20 @@
     "jest-cli": "^23.4.2"
   }
 }
+||||||| merged common ancestors
+=======
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "",
+  "license": "ISC"
+}
+>>>>>>> e6e8a65280c2345eddc6771d702a6517455ea254
