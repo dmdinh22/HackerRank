@@ -3,3 +3,5 @@
 /obj
 Program.cs
 HackerRank.csproj
+/node_modules
+/package-lock.json
