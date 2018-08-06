@@ -16,11 +16,11 @@ function reverse(str) {
   // // join back into string
   // return arr.join('');
 
-  // one liner
+  // one liner for code cleanup
   return str
-        .split('')
-        .reverse()
-        .join('');
+    .split('')
+    .reverse()
+    .join('');
 }
 
 module.exports = reverse;
