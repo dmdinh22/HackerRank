@@ -8,6 +8,7 @@
 
 // ## SOLUTION 3 ##
 // use reduce helper
+/*
 function reverse(str) {
   // turn str into array
   return (
@@ -22,9 +23,9 @@ function reverse(str) {
       }, '')
   ); // starting arg is empty string
 }
+*/
 
 // ## SOLUTION 2 ##
-/*
 function reverse(str) {
   // create empty string called 'reversed'
   let reversed = '';
@@ -33,12 +34,15 @@ function reverse(str) {
   for (let char of str) {
     //take char and add it to start of 'reversed' var
     reversed = char + reversed;
+    debugger;
   }
 
   // return var 'reversed
   return reversed;
 }
-*/
+
+// call the function to use the debugger;
+reverse('asdf');
 
 // ## SOLUTION 1 ##
 /*
