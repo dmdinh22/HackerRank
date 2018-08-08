@@ -16,7 +16,10 @@ function reverseInt(n) {
     .join(''); // join back into string
 
   //             parse string to int
-  return n < 0 ? parseInt(reversed) * -1 : parseInt(reversed);
+  // return n < 0 ? parseInt(reversed) * -1 : parseInt(reversed);
+
+  // using Math.sign() method from JS
+  return parseInt(reversed) * Math.sign(n);
 }
 
 module.exports = reverseInt;
