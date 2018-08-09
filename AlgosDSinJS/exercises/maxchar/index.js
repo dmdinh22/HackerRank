@@ -12,6 +12,16 @@
 - Does the given string have any repeated chars in it?
 */
 
-function maxChar(str) {}
+function maxChar(str) {
+  const charMap = {};
+
+  // create chars obj with character as key and amount as value
+  for (let char of str) {
+    !charMap[char] ? (charMap[char] = 1) : charMap[char]++;
+  }
+
+  console.log(charMap);
+  return charMap;
+}
 
 module.exports = maxChar;
