@@ -5,6 +5,13 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
+// Common String Questions Similar
+/*
+- What is the most common char in the string? 
+- Does string A have the same chars as string B (is it an anagram)?
+- Does the given string have any repeated chars in it?
+*/
+
 function maxChar(str) {}
 
 module.exports = maxChar;
