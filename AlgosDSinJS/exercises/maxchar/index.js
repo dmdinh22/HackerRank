@@ -14,14 +14,24 @@
 
 function maxChar(str) {
   const charMap = {};
+  let max = 0;
+  let maxChar = '';
 
   // create chars obj with character as key and amount as value
   for (let char of str) {
     !charMap[char] ? (charMap[char] = 1) : charMap[char]++;
   }
 
-  console.log(charMap);
-  return charMap;
+  // iterate over charMap and check against max value
+  for (let char in charMap) {
+    // for in - object iteration
+    if (charMap[char] > max) {
+      max = charMap[char];
+      maxChar = char;
+    }
+  }
+
+  return maxChar;
 }
 
 module.exports = maxChar;
