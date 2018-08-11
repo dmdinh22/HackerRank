@@ -8,6 +8,13 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-function chunk(array, size) {}
+function chunk(array, size) {
+  // create empty array to hold chunks called 'chunked'
+  // for each el in 'unchunked' array
+  // retriteve last el in 'chunked'
+  // IF last el DNE, or if length = chunk size
+  // push new chunk into 'chunked' w/ current el
+  // ELSE add current el into chunk
+}
 
 module.exports = chunk;
