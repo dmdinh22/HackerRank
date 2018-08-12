@@ -10,11 +10,11 @@
 
 function chunk(array, size) {
   // create empty array to hold chunks called 'chunked'
-  // for each el in 'unchunked' array
-  // retriteve last el in 'chunked'
-  // IF last el DNE, or if length = chunk size
-  // push new chunk into 'chunked' w/ current el
-  // ELSE add current el into chunk
+  // for each element in 'unchunked' array
+  // retrieve last element in 'chunked'
+  // IF last element DNE, or if length = chunk size
+  // push new chunk into 'chunked' w/ current element
+  // ELSE add current element into chunk
 }
 
 module.exports = chunk;
