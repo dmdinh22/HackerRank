@@ -15,7 +15,13 @@ function chunk(array, size) {
 
   // as long as index < original length
   while (index < array.length) {
+    //                slice from index to index plus size
+    // array.slice() produces an array that contains some number of elements
+    // out of the original array - take sliced array and stick into chunked array
+    // with push method
     chunked.push(array.slice(index, index + size));
+
+    // move onto next index - increment by size variable
     index += size;
   }
 
