@@ -29,14 +29,12 @@ function reverse(str) {
 function reverse(str) {
   // create empty string called 'reversed'
   let reversed = '';
-
   // for each char in string - new syntax (var X of arg)
   for (let char of str) {
     //take char and add it to start of 'reversed' var
     reversed = char + reversed;
     debugger;
   }
-
   // return var 'reversed
   return reversed;
 }
@@ -61,6 +59,19 @@ function reverse(str) {
     .split('')
     .reverse()
     .join('');
+}
+*/
+
+// ## SOLUTION ##
+/*
+function reverse(str) {
+  let reversed = '';
+
+  for (i = 0; i < str.length; i++) {
+    reversed = str[i] + reversed;
+  }
+
+  return reversed;
 }
 */
 
