@@ -40,7 +40,7 @@ buildCharMap = str => {
   // iterate over str with regex cleanup
   for (let char of str.replace(/[^\w]/g).toLowerCase()) {
     // set charMap key as the current char we're on
-    charMap[char] = charMap[char] + 1 || 1;
+    charMap[char] = charMap[char]++ /* + 1 */ || 1;
   }
 
   return charMap;
