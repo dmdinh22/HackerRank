@@ -8,6 +8,28 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
 function capitalize(str) {
+  // create 'result' which is the first char of the input string capitalized
+  let result = str[0].toUpperCase();
+  // for each char in string
+  for (let i = 1; i < str.length; i++) {
+    // if char to left is a space
+    if (str[i - 1] === ' ') {
+      // uppercase and add to result
+      result += str[i].toUpperCase();
+      // else
+    } else {
+      // add char to 'result' as is
+      result += str[i];
+    }
+  }
+
+  return result;
+}
+
+// ## SOLUTION 1 ##
+// using array helper methods
+/*
+function capitalize(str) {
   // make an empty array 'words'
   const words = [];
   // split input str by spaces to get an array
@@ -21,5 +43,5 @@ function capitalize(str) {
   // join 'words' into a string and return it
   return words.join(' ');
 }
-
+*/
 module.exports = capitalize;
