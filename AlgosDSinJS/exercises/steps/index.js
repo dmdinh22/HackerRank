@@ -17,8 +17,13 @@
 //       '### '
 //       '####'
 
+// ## SOLUTION 2 ##
+// Recursive
+function steps(n) {}
+
 // ## SOLUTION 1 ##
 // Iterative
+/*
 function steps(n) {
   // from 0 to n (iterate over rows)
   for (let row = 0; row < n; row++) {
@@ -40,5 +45,5 @@ function steps(n) {
     console.log(stair);
   }
 }
-
+*/
 module.exports = steps;
