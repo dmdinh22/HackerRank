@@ -17,6 +17,14 @@
 //       '### '
 //       '####'
 
+// Recursion Tips
+/*
+- figure out bare min pieces of info to represent your problem
+- give reasonable defaults to bare min pieces of info
+- check base case: any work left to do? if not, return
+- do some work - call function again, amking sure the args have changed in some fashion
+*/
+
 // ## SOLUTION 2 ##
 // Recursive
 function steps(n) {}
