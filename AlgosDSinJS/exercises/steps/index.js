@@ -27,7 +27,25 @@
 
 // ## SOLUTION 2 ##
 // Recursive
-function steps(n) {}
+function steps(n, row = 0, stair = '') {
+  //base case
+  if (n === row) {
+    return;
+  }
+
+  if (n === stair.length) {
+    console.log(stair);
+    return steps(n, row + 1);
+  }
+
+  if (stair.length <= row) {
+    stair += '#';
+  } else {
+    stair += ' ';
+  }
+
+  steps(n, row, stair);
+}
 
 // ## SOLUTION 1 ##
 // Iterative
