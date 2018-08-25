@@ -23,6 +23,27 @@
 - give reasonable defaults to bare min pieces of info
 - check base case: any work left to do? if not, return
 - do some work - call function again, amking sure the args have changed in some fashion
+
+############
+EXAMPLE
+############
+
+function printNumber(n) {
+	// base case - no more work to do
+  if (n === 0) {
+    return;
+  }
+  
+  // do some amount of work
+  // in this case, print out the number 'n'
+  console.log(n);
+  
+  // call function again
+  // **change argument in some fashion!**
+  printNumber(n-1); // recursive step
+}
+
+printNumber(10);
 */
 
 // ## SOLUTION 2 ##
@@ -33,17 +54,20 @@ function steps(n, row = 0, stair = '') {
     return;
   }
 
+  // do some work - print out 'stair' -> ''
   if (n === stair.length) {
     console.log(stair);
     return steps(n, row + 1);
   }
 
+  // change argument in some fashion
   if (stair.length <= row) {
     stair += '#';
   } else {
     stair += ' ';
   }
 
+  // call function again
   steps(n, row, stair);
 }
 
