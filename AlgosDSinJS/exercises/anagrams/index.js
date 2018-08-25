@@ -16,12 +16,15 @@ function anagrams(stringA, stringB) {
 
 // helper function
 cleanString = str => {
-  return str
-    .replace(/[^\w]/g, '') // clean string of spaces and non chars
-    .toLowerCase()
-    .split('') // turn into array
-    .sort() // alphabetize
-    .join(''); // put back into array
+  return (
+    str
+      //.replace(/[^\w]/g, '') // clean string of spaces and non chars
+      .replace(/[^[a-zA-Z0-9_]]/g, '')
+      .toLowerCase()
+      .split('') // turn into array
+      .sort() // alphabetize
+      .join('')
+  ); // put back into array
 };
 
 // ## SOLUTION 1 ##
