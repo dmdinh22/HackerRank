@@ -19,7 +19,7 @@ cleanString = str => {
   return (
     str
       //.replace(/[^\w]/g, '') // clean string of spaces and non chars
-      .replace(/[^[a-zA-Z0-9_]]/g, '')
+      .replace(/[^[a-zA-Z0-9]]/g, '')
       .toLowerCase()
       .split('') // turn into array
       .sort() // alphabetize
