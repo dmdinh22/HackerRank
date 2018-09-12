@@ -23,8 +23,8 @@ cleanString = str => {
       .toLowerCase()
       .split('') // turn into array
       .sort() // alphabetize
-      .join('')
-  ); // put back into array
+      .join('') // put back into array
+  );
 };
 
 // ## SOLUTION 1 ##
